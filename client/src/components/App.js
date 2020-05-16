@@ -5,7 +5,7 @@ import history from "./history";
 import Main from "./pages/Main";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
-import CustomOrder from "./pages/CustomOrder";
+import CustomOrder from "./pages/Custom_Order";
 import WhatWeDo from "./pages/WhatWeDo";
 
 const App = () => {
@@ -16,10 +16,10 @@ const App = () => {
           <Header />
           <Switch>
             <Route path="/" exact component={Main} />
-            <Route path="/aboutus" exact component={AboutUs} />
+            <Route path="/about_us" exact component={AboutUs} />
             <Route path="/contact" exact component={Contact} />
-            <Route path="/customorder" exact component={CustomOrder} />
-            <Route path="/whatwedo" exact component={WhatWeDo} />
+            <Route path="/custom_order" exact component={CustomOrder} />
+            <Route path="/what_we_do" exact component={WhatWeDo} />
           </Switch>
         </div>
       </Router>
