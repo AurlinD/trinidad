@@ -5,7 +5,7 @@ import history from "./history";
 import Main from "./pages/Main";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
-import CustomOrder from "./pages/Custom_Order";
+import CustomOrder from "./pages/CustomOrder";
 import WhatWeDo from "./pages/WhatWeDo";
 
 const App = () => {
