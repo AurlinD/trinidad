@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function AboutUs() {
-  return <div>ABOUT US</div>;
+  return <div>
+
+  <h1>ABOUT US</h1>
+
+  </div>;
 }
