@@ -1,0 +1,40 @@
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48;
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16;
+}
+
+.page{
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.about-us-box{
+  display: flex;
+  height: 730px;
+  align-items: center;
+}
+
+.reverse{
+  flex-direction: row-reverse;
+}
+
+
+.about-us-img{
+  width: 50%;
+  height: 100%;
+}
+
+.about-us-text{
+  width: 50%;
+  margin: 30px;
+}

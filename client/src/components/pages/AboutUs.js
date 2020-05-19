@@ -3,11 +3,16 @@ import React from "react";
 import AboutUsBox from "../AboutUsBox.js";
 
 export default function AboutUs() {
-  return <div>
+  return <div class="page">
 
-  <h1>ABOUT US</h1>
-  <AboutUsBox />
-  <AboutUsBox />
-  <AboutUsBox />
+  <AboutUsBox
+    alignRight={false}
+  />
+  <AboutUsBox
+    alignRight={true}
+  />
+  <AboutUsBox
+    alignRight={false}
+  />
   </div>
 }
