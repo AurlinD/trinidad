@@ -14,7 +14,9 @@ export default class AboutUsBox extends Component {
         </div>
         <p> Lorem ipsum dolor sit amet, quo utinam feugiat no, pro ea tota propriae officiis, dicit legendos at sit. Mea quando tritani ne, ne vix wisi labores. Singulis patrioque conclusionemque eu vim. Cum esse meis ut. Assueverit interpretaris ut usu, elit bonorum facilisi sed te. </p>
       </div>
-      <img class="about-us-img" />
+      <div class="about-us-img-box">
+        <img class="about-us-img" src="/lib/test.png" />
+      </div>
     </div>
     );
   }

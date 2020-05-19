@@ -29,14 +29,23 @@ p{
   flex-direction: row-reverse;
 }
 
-.about-us-img{
-  width: 50%;
-  height: 100%;
+.about-us-img-box{
+  position: absolute;
+  width: 50vw;
+  height: 730px;
+  overflow: hidden;
+  z-index: -200;
+  right: 0;
+}
+
+.reverse .about-us-img-box{
+  right: auto;
+  left: 0;
 }
 
 .about-us-text{
   width: 50%;
-  margin: 30px;
+  margin: 50px;
 }
 
 .about-us-headder-back{
@@ -51,7 +60,7 @@ p{
   position: absolute;
   left: 0;
   background-color: grey;
-  opacity: 0.3;
+  opacity: 0.6;
   z-index: -100;
 }
 
