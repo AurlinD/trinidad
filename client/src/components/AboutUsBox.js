@@ -7,8 +7,8 @@ export default class AboutUsBox extends Component {
     return(
     <div class={`about-us-box ${this.props.alignRight ? "reverse" : ""}`}>
       <div class="about-us-text">
-        <div class="about-us-headder-back">
-          <h2> {this.props.aboutUsHeadder} </h2>
+        <div class="about-us-header-back">
+          <h2> {this.props.aboutUsHeader} </h2>
           <div class="about-us-grey-back">
           </div>
         </div>
