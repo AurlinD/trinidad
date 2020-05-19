@@ -15,7 +15,7 @@ export default class AboutUsBox extends Component {
         <p> {this.props.aboutUsBody} </p>
       </div>
       <div class="about-us-img-box">
-        <img class="about-us-img" src="/lib/test.png" />
+        <img class="about-us-img" src={`/lib/${this.props.imgName}`} />
       </div>
     </div>
     );
