@@ -1,16 +1,16 @@
 h1{
   font-family: 'Montserrat', sans-serif;
-  font-size: 36;
+  font-size: 36px;
 }
 
-h2{
+.about-us-text h2{
   font-family: 'Montserrat', sans-serif;
-  font-size: 48;
+  font-size: 48px;
 }
 
 p{
   font-family: 'Montserrat', sans-serif;
-  font-size: 16;
+  font-size: 16px;
 }
 
 .page{
@@ -44,8 +44,7 @@ p{
 }
 
 .about-us-text{
-  width: 50%;
-  margin: 50px;
+  width: 35vw;
 }
 
 .about-us-headder-back{
