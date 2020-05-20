@@ -1,69 +1,69 @@
-h1{
-  font-family: 'Montserrat', sans-serif;
+h1 {
+  font-family: "Montserrat", sans-serif;
   font-size: 36px;
 }
 
-.about-us-text h2{
-  font-family: 'Montserrat', sans-serif;
+.about-us-text h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 48px;
 }
 
-p{
-  font-family: 'Montserrat', sans-serif;
+p {
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 
-.page{
+.page {
   margin-left: 10vw;
   margin-right: 10vw;
 }
 
-.about-us-box{
+.about-us-box {
   display: flex;
   height: 730px;
   align-items: center;
   overflow: hidden;
 }
 
-.reverse{
+.reverse {
   flex-direction: row-reverse;
 }
 
-.about-us-img-box{
+.about-us-img-box {
   position: absolute;
   width: 50vw;
   height: 730px;
   overflow: hidden;
   z-index: -200;
-  right: 0;
+  right: 1vw;
 }
 
-.reverse .about-us-img-box{
+.reverse .about-us-img-box {
   right: auto;
-  left: 0;
+  left: 1vw;
 }
 
-.about-us-text{
+.about-us-text {
   width: 35vw;
 }
 
-.about-us-header-back{
+.about-us-header-back {
   display: flex;
   height: 200px;
   align-items: center;
 }
 
-.about-us-grey-back{
+.about-us-grey-back {
   height: 200px;
   min-width: 60vw;
   position: absolute;
-  left: 0;
+  left: 1vw;
   background-color: grey;
   opacity: 0.6;
   z-index: -100;
 }
 
-.reverse .about-us-grey-back{
+.reverse .about-us-grey-back {
   left: auto;
-  right: 0;
+  right: 1vw;
 }

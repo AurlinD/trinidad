@@ -5,6 +5,7 @@ nav {
   width: 100%;
   z-index: 10;
   background-color: white;
+  overflow: hidden;
 
   color: #ffff;
   padding: 1.5em;
