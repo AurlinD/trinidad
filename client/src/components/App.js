@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="ui container">
       <Router history={history}>
-        <div>
+        <div className="container">
           <Header />
           <Switch>
             <Route path="/" exact component={Main} />

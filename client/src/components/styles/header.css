@@ -1,15 +1,16 @@
-nav {
-  display: flex;
-  height: 1em;
+nav.bar {
+  display: inline-flex;
+  height: 1.5vw;
   position: sticky;
   width: 100%;
   z-index: 10;
   background-color: white;
   overflow: hidden;
 
-  color: #ffff;
-  padding: 1.5em;
-  font-size: 1.2em;
+  color: grey;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1.1em;
 
   /* required for position sticky */
   top: 0;
@@ -18,22 +19,21 @@ nav {
   justify-content: space-between;
 }
 
-.right_menu {
-  padding-right: 2em;
-}
-
-.right_menu a {
-  padding: 0.5em;
+div.right_menu a {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
   border-right: solid;
   border-width: 2px;
 }
 
-a {
+nav a {
   color: #a9a9a9;
   text-decoration: none;
 }
 
-.right_menu a:hover {
+div.right_menu a:hover {
   border-style: solid;
   border-radius: 10px;
   border-color: blue;
