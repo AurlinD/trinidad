@@ -35,12 +35,12 @@ p {
   height: 730px;
   overflow: hidden;
   z-index: -200;
-  right: 1vw;
+  right: 0;
 }
 
 .reverse .about-us-img-box {
   right: auto;
-  left: 1vw;
+  left: 0;
 }
 
 .about-us-text {
