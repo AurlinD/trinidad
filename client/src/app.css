@@ -67,3 +67,41 @@ p {
   left: auto;
   right: 1vw;
 }
+
+.our-service{
+  position: absolute;
+  left: 0;
+  background-image: url("/lib/service.png");
+  background-size: 100vw auto;
+  width: 100vw;
+  height: 970px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container{
+  width: 80vw;
+
+}
+
+.our-service-button{
+  background-color: transparent;
+  border-radius: 17px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  width: 400px;
+  height: 120px;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.our-service-button:hover{
+  background-color: #ffffff;
+  color: black;
+}
