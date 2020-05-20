@@ -6,6 +6,7 @@ export default class OurService extends Component {
   render() {
     return(
       <div class="our-service">
+        <h2> Our Services </h2>
         <div class="button-container">
           <button type="button" class="our-service-button">Construction</button>
           <button type="button" class="our-service-button">Medical & Surgical</button>

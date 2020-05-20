@@ -76,8 +76,15 @@ p {
   width: 100vw;
   height: 970px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.our-service h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  color: white;
 }
 
 .button-container{
