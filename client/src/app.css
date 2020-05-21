@@ -57,7 +57,7 @@ p {
   height: 200px;
   min-width: 60vw;
   position: absolute;
-  left: 1vw;
+  left: 0;
   background-color: grey;
   opacity: 0.6;
   z-index: -100;
@@ -65,10 +65,10 @@ p {
 
 .reverse .about-us-grey-back {
   left: auto;
-  right: 1vw;
+  right: 0;
 }
 
-.our-service{
+.our-service {
   position: absolute;
   left: 0;
   background-image: url("/lib/service.png");
@@ -87,14 +87,14 @@ p {
   color: white;
 }
 
-.button-container{
+.button-container {
   width: 80vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.our-service-button{
+.our-service-button {
   background-color: transparent;
   border-radius: 17px;
   border: 2px solid #ffffff;
@@ -111,7 +111,7 @@ p {
   margin-bottom: 1.5vw;
 }
 
-.our-service-button:hover{
+.our-service-button:hover {
   background-color: #ffffff;
   color: black;
 }
