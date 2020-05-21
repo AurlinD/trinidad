@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
@@ -63,7 +67,7 @@ p {
   height: 200px;
   min-width: 60vw;
   position: absolute;
-  left: 1vw;
+  left: 0;
   background-color: #A7A9AC;
   opacity: 0.8;
   z-index: -100;
@@ -71,7 +75,7 @@ p {
 
 .reverse .about-us-grey-back {
   left: auto;
-  right: 1vw;
+  right: 0;
 }
 
 .our-service-body{
@@ -97,14 +101,14 @@ p {
   color: white;
 }
 
-.button-container{
+.button-container {
   width: 80vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.our-service-button{
+.our-service-button {
   background-color: transparent;
   border-radius: 17px;
   border: 2px solid #ffffff;
@@ -121,7 +125,7 @@ p {
   margin-bottom: 1.5vw;
 }
 
-.our-service-button:hover{
+.our-service-button:hover {
   background-color: #ffffff;
   color: black;
 }
