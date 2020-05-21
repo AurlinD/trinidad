@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../app.css";
 import "./styles/header.css";
 
 export default function Header() {
@@ -10,11 +9,11 @@ export default function Header() {
         <Link to="/">Trinidad</Link>
       </div>
       <div className="right_menu">
+        <Link to="/">Home</Link>
         <Link to="/about_us">About Us</Link>
-
-        <Link to="/what_we_do">What We Do</Link>
+        <Link to="/service">Service</Link>
         <Link to="/contact">Contact</Link>
-        <Link to="/custom_order">Custom Order</Link>
+        <Link to="/order">Order</Link>
       </div>
     </nav>
   );
