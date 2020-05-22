@@ -9,11 +9,21 @@ export default function Header() {
         <Link to="/">Trinidad</Link>
       </div>
       <div className="right_menu">
-        <Link to="/">Home</Link>
-        <Link to="/about_us">About Us</Link>
-        <Link to="/service">Service</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/order">Order</Link>
+        <Link className="main-elements" to="/">
+          Home
+        </Link>
+        <Link className="main-elements" to="/about_us">
+          About Us
+        </Link>
+        <Link className="main-elements" to="/service">
+          Service
+        </Link>
+        <Link className="main-elements" to="/contact">
+          Contact
+        </Link>
+        <Link className="right-most" to="/order">
+          Order
+        </Link>
       </div>
     </nav>
   );
