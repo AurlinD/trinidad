@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles/header.css";
+import "./styles/navigation.css";
 
-export default function Header() {
+export default function Navigation() {
   return (
     <nav className="bar">
       <div className="left_menu">

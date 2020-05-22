@@ -12,8 +12,8 @@
 .header {
   text-align: center;
   color: white;
-  font-size: 6vw;
-  padding: 2vw 0;
+  font-size: 48px;
+  padding: 2vh 0;
   letter-spacing: 0.2em;
 }
 
@@ -22,7 +22,6 @@
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
-  height: 70%;
 }
 
 .boxes {
@@ -89,12 +88,6 @@
   background: rgba(255, 255, 255, 0.9);
 }
 
-.send-button {
-  display: flex;
-  text-align: center;
-  margin: 1vw auto;
-}
-
 .right-box {
   margin: 0 1vw;
   width: 30%;
@@ -110,4 +103,29 @@
 .right-box-content {
   font-family: sans-serif;
   letter-spacing: 0;
+}
+
+.send-button {
+  display: flex;
+  text-align: center;
+
+  background-color: transparent;
+  border-radius: 17px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  min-width: 250px;
+  width: 20vw;
+  height: 7vh;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 20vw;
+  margin-right: 2vw;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+
+.send-button:hover {
+  background-color: #ffffff;
+  color: #3e5ba9;
 }
