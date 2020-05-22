@@ -2,10 +2,10 @@
   font-family: "Montserrat";
   background-image: url("/lib/contact.jpg");
   background-size: cover;
-
-  opacity: 0.85;
+  position: center;
+  /* opacity: 0.9; */
   margin: 0 auto;
-  height: 95vw;
+  height: 89.5vh;
   z-index: -10;
 }
 
@@ -14,24 +14,28 @@
   color: white;
   font-size: 6vw;
   padding: 2vw 0;
+  letter-spacing: 0.2em;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+  height: 70%;
 }
 
 .boxes {
   color: white;
   display: flex;
   flex-direction: row;
+  height: 90%;
 }
 
 .sub-header {
   font-family: sans-serif;
   color: white;
+  padding-bottom: 0.4em;
 }
 
 .left-box {
@@ -40,35 +44,49 @@
 }
 
 .left-box-fill-in {
-  background-color: gray;
-  opacity: 0.6;
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
 }
 .row {
   display: flex;
   flex-direction: row;
+  padding: 0.2em;
 }
 
 .input {
   width: 45%;
-  padding: 1vw;
+  padding: 1em;
 }
 
 .input-information {
-  margin-bottom: 0.3vw;
+  color: white;
+  margin-bottom: 0.6vw;
+  letter-spacing: 0.2em;
 }
 
 .input-field {
+  background: rgba(255, 255, 255, 0.9);
   width: 100%;
+  border-style: none;
+  border-radius: 10px;
+  height: 4vh;
 }
 
 .message {
-  padding: 1vw;
-  width: 100%;
+  padding: 1.2em;
+}
+
+.message-input {
+  margin-bottom: 0.3vw;
+  letter-spacing: 0.2em;
 }
 
 .message-field {
-  width: 90%;
-  height: 3vw;
+  width: 100%;
+  height: 20vh;
+  border-style: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .send-button {
@@ -80,10 +98,16 @@
 .right-box {
   margin: 0 1vw;
   width: 30%;
-  background-color: gray;
-  opacity: 0.6;
+  background: rgba(255, 255, 255, 0.3);
+  /* opacity: 0.6; */
+}
+
+.right-box-header {
+  padding: 1.2em;
+  letter-spacing: 0.2em;
 }
 
 .right-box-content {
   font-family: sans-serif;
+  letter-spacing: 0;
 }

@@ -4,7 +4,7 @@ import "../styles/contact.css";
 export default function Contact() {
   return (
     <div className="wrapper">
-      <div className="header">Let's Connect</div>
+      <div className="header">LETS CONNECT</div>
       <div className="content">
         <div className="sub-header">
           * Give our department 3-5 working days to get back to you
@@ -39,28 +39,33 @@ export default function Contact() {
               </div>
             </div>
 
-            <button className="send-button">SEND</button>
+            {/* <button className="send-button">SEND</button> */}
           </div>
 
           <div className="right-box">
             <div className="right-box-header">
-              Email
+              EMAIL
               <div className="right-box-content">email@gmail.com</div>
             </div>
             <div className="right-box-header">
-              Number
+              NUMBER
               <div className="right-box-content">000-000-000</div>
             </div>
             <div className="right-box-header">
-              Office
-              <div className="right-box-content">Street name,Country City</div>
+              OFFICE
+              <div className="right-box-content">
+                STREET NAME
+                <br />
+                COUNTRY CITY
+              </div>
             </div>
             <div className="right-box-header">
-              Follow Us
+              FOLLOW US
               <div className="right-box-content">emoticons</div>
             </div>
           </div>
         </div>
+        <button className="send-button">SEND</button>
       </div>
     </div>
   );
