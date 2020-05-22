@@ -38,8 +38,6 @@ export default function Contact() {
                 <input className="message-field" type="text" />
               </div>
             </div>
-
-            {/* <button className="send-button">SEND</button> */}
           </div>
 
           <div className="right-box">

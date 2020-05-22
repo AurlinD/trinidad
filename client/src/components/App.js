@@ -1,6 +1,6 @@
 import React from "react";
 import { Router, Route, Switch } from "react-router-dom";
-import Header from "./Header";
+import Navigation from "./Navigation";
 import history from "./history";
 import Main from "./pages/Main";
 import AboutUs from "./pages/AboutUs";
@@ -13,7 +13,7 @@ const App = () => {
     <div className="ui container">
       <Router history={history}>
         <div className="container">
-          <Header />
+          <Navigation />
           <Switch>
             <Route path="/" exact component={Main} />
             <Route path="/about_us" exact component={AboutUs} />
