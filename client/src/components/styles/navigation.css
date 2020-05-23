@@ -1,6 +1,6 @@
 nav.bar {
   display: inline-flex;
-  height: 1.5vw;
+  height: 3vh;
   position: sticky;
   width: 100%;
   z-index: 10;
@@ -8,34 +8,40 @@ nav.bar {
   overflow: hidden;
 
   color: grey;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   font-size: 1.1em;
+  font-family: "Montserrat", sans-serif;
 
   /* required for position sticky */
   top: 0;
 
   /* content */
+  /* flex-direction: row; */
   justify-content: space-between;
 }
+.logo {
+  margin-left: 1em;
+}
 
-div.right_menu a {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 1em;
-  padding-right: 1em;
+.main-elements {
+  padding: 0.5em 1em;
   border-right: solid;
-  border-width: 2px;
+  border-width: 1.3px;
+}
+
+.right-most {
+  padding: 0.5em 1em;
 }
 
 nav a {
-  color: #a9a9a9;
+  color: #707070;
   text-decoration: none;
 }
 
 div.right_menu a:hover {
   border-style: solid;
   border-radius: 10px;
-  border-color: blue;
-  border-width: 2px;
+  border-color: #3e5ba9;
+  border-width: 1.5px;
 }

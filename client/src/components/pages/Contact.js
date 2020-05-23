@@ -4,7 +4,7 @@ import "../styles/contact.css";
 export default function Contact() {
   return (
     <div className="wrapper">
-      <div className="header">Let's Connect</div>
+      <div className="header">LETS CONNECT</div>
       <div className="content">
         <div className="sub-header">
           * Give our department 3-5 working days to get back to you
@@ -14,53 +14,61 @@ export default function Contact() {
             <div className="left-box-fill-in">
               <div className="row">
                 <div className="input">
-                  <div className="input-information">Name *</div>
+                  <div className="input-information">NAME *</div>
                   <input className="input-field" type="text" />
                 </div>
                 <div className="input">
-                  <div className="input-information">Phone Number</div>
+                  <div className="input-information">PHONE NUMBER</div>
                   <input className="input-field" type="text" />
                 </div>
               </div>
 
               <div className="row">
                 <div className="input">
-                  <div className="input-information">Company</div>
+                  <div className="input-information">COMPANY</div>
                   <input className="input-field" type="text" />
                 </div>
                 <div className="input">
-                  <div className="input-information">E-Mail Address *</div>
+                  <div className="input-information">E-MAIL ADDRESS *</div>
                   <input className="input-field" type="text" />
                 </div>
               </div>
               <div className="message">
-                <div className="message-input">Message</div>
+                <div className="message-input">MESSAGE</div>
                 <input className="message-field" type="text" />
               </div>
             </div>
-
-            <button className="send-button">Send</button>
           </div>
 
           <div className="right-box">
             <div className="right-box-header">
-              Email
+              EMAIL
               <div className="right-box-content">email@gmail.com</div>
             </div>
             <div className="right-box-header">
-              Number
+              NUMBER
               <div className="right-box-content">000-000-000</div>
             </div>
             <div className="right-box-header">
-              Office
-              <div className="right-box-content">Street name,Country City</div>
+              OFFICE
+              <div className="right-box-content">
+                STREET NAME
+                <br />
+                COUNTRY CITY
+              </div>
             </div>
             <div className="right-box-header">
-              Follow Us
+              FOLLOW US
               <div className="right-box-content">emoticons</div>
             </div>
           </div>
         </div>
+        <button className="send-button">
+          <div className="left-content-button">SEND</div>
+          <div className="right-content-button">
+            <i class="far fa-paper-plane fa-2x"></i>
+          </div>
+        </button>
       </div>
     </div>
   );
