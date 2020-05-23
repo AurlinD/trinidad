@@ -20,6 +20,9 @@ nav.bar {
   /* flex-direction: row; */
   justify-content: space-between;
 }
+.logo {
+  margin-left: 1em;
+}
 
 .main-elements {
   padding: 0.5em 1em;

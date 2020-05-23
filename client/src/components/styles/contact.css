@@ -106,15 +106,13 @@
 }
 
 .send-button {
-  display: flex;
-  text-align: center;
-
+  display: inline-flex;
   background-color: transparent;
-  border-radius: 17px;
+  border-radius: 10px;
   border: 2px solid #ffffff;
   cursor: pointer;
-  min-width: 250px;
-  width: 20vw;
+  /* min-width: 250px; */
+  width: 11vw;
   height: 7vh;
   color: #ffffff;
   font-size: 24px;
@@ -123,6 +121,26 @@
   margin-right: 2vw;
   margin-top: 1.5vw;
   margin-bottom: 1.5vw;
+}
+
+.button-content {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.button-message {
+  letter-spacing: 0.2em;
+}
+
+.fa-paper-plane:before {
+  content: "\f1d8";
+  color: #3e5ba9;
+  background: #ffffff;
+  padding: 0.3em;
+  border-radius: 10px;
 }
 
 .send-button:hover {
