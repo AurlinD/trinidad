@@ -6,7 +6,9 @@ export default function Navigation() {
   return (
     <nav className="bar">
       <div className="left_menu">
-        <Link to="/">Trinidad</Link>
+        <Link className="logo" to="/">
+          Trinidad
+        </Link>
       </div>
       <div className="right_menu">
         <Link className="main-elements" to="/">

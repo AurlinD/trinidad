@@ -63,7 +63,14 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <button className="send-button">SEND</button>
+        <button className="send-button">
+          <div className="button-content">
+            <div className="button-message">SEND </div>
+            <div className="button-icon">
+              <i class="far fa-paper-plane"></i>
+            </div>
+          </div>
+        </button>
       </div>
     </div>
   );
