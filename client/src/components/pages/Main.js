@@ -5,14 +5,16 @@ import OurService from "../OurService.jsx"
 import "../styles/home.css"
 
 export default function Main() {
-  return <div>
-    <div class="hero">
-      <div class="hero-spacer">
-      </div>
-      <div class="hero-text-box">
-        <div class="hero-quote">
-          <h2>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</h2>
-          <h2 class="hero-quote-name">- LOREM IPSUM</h2>
+  return <div className="page">
+    <div className="hero-body">
+      <div className="hero">
+        <div className="hero-spacer">
+        </div>
+        <div className="hero-text-box">
+          <div className="hero-quote">
+            <h2>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</h2>
+            <h2 className="hero-quote-name">- LOREM IPSUM</h2>
+          </div>
         </div>
       </div>
     </div>
@@ -24,13 +26,15 @@ export default function Main() {
       imgName="what.png"
     />
 
-    <div class="home-spacer">
+    <div className="home-spacer">
     </div>
 
-    <div class="past-clients">
+    <div className="past-clients-body">
+      <div className="past-clients">
+      </div>
     </div>
 
-    <div class="home-spacer">
+    <div className="home-spacer">
     </div>
 
     <OurService

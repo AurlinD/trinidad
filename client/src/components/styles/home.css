@@ -1,16 +1,25 @@
+.page {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
 .hero h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
   color: #FFFFFF;
 }
 
+.hero-body{
+  height: 970px;
+}
 
 .hero{
-  height: 970px;
   background-image: url("/lib/hero.png");
   background-size: cover;
   width: 100%;
   display: flex;
+  position: absolute;
+  left: 0;
 }
 
 .hero-spacer{
@@ -21,7 +30,6 @@
   display: flex;
   height: 970px;
   align-items: center;
-
 }
 
 .hero-quote{
@@ -30,14 +38,20 @@
 
 .hero-quote-name{
   float: right;
+  margin-top: 10px;
 }
 
 .home-spacer{
   height: 80px;
 }
 
-.past-clients{
+.past-clients-body{
   height: 760px;
+}
+
+.past-clients{
   background-color: green;
   width: 100%;
+  position: absolute;
+  left: 0;
 }
