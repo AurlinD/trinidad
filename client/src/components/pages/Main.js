@@ -7,6 +7,14 @@ import "../styles/home.css"
 export default function Main() {
   return <div>
     <div class="hero">
+      <div class="hero-spacer">
+      </div>
+      <div class="hero-text-box">
+        <div class="hero-quote">
+          <h2>“Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</h2>
+          <h2 class="hero-quote-name">- LOREM IPSUM</h2>
+        </div>
+      </div>
     </div>
 
     <AboutUsBox
