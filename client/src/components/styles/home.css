@@ -1,0 +1,15 @@
+.hero{
+  height: 970px;
+  background-color: blue;
+  width: 100%;
+}
+
+.home-spacer{
+  height: 80px;
+}
+
+.past-clients{
+  height: 760px;
+  background-color: green;
+  width: 100%;
+}
