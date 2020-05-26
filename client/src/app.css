@@ -10,11 +10,11 @@ h1 {
 .about-us-text h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
-  color: #3E5BA9;
+  color: #3e5ba9;
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
@@ -68,7 +68,7 @@ p {
   min-width: 60vw;
   position: absolute;
   left: 0;
-  background-color: #A7A9AC;
+  background-color: #a7a9ac;
   opacity: 0.8;
   z-index: -100;
 }
@@ -78,11 +78,11 @@ p {
   right: 0;
 }
 
-.our-service-body{
+.our-service-body {
   height: 970px;
 }
 
-.our-service{
+.our-service {
   position: absolute;
   left: 0;
   background-image: url("/lib/service.png");
@@ -106,9 +106,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .our-service-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border-radius: 17px;
   border: 2px solid #ffffff;
@@ -123,6 +127,11 @@ p {
   margin-right: 2vw;
   margin-top: 1.5vw;
   margin-bottom: 1.5vw;
+  text-align: center;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
 }
 
 .our-service-button:hover {
