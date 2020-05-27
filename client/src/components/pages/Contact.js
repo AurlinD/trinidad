@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/reset.css";
 import "../styles/contact.css";
 
 export default function Contact() {
@@ -35,7 +36,7 @@ export default function Contact() {
               </div>
               <div className="message">
                 <div className="message-input">MESSAGE</div>
-                <input className="message-field" type="text" />
+                <textarea className="message-field" />
               </div>
             </div>
           </div>
