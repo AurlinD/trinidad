@@ -1,4 +1,4 @@
-.wrapper {
+.wrapper-contact {
   font-family: "Montserrat";
   background-image: url("/lib/contact.jpg");
   background-size: cover;
@@ -7,61 +7,61 @@
   z-index: -10;
 }
 
-.header {
+.header-contact {
   text-align: center;
   color: white;
   font-size: 48px;
-  padding: 2vh 0;
+  padding: 4vh 0;
   letter-spacing: 0.2em;
 }
 
-.content {
+.content-contact {
   display: flex;
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
 }
 
-.boxes {
+.boxes-contact {
   color: white;
   display: flex;
   flex-direction: row;
   height: 90%;
 }
 
-.sub-header {
+.sub-header-contact {
   font-family: sans-serif;
   color: white;
   padding-bottom: 0.4em;
 }
 
-.left-box {
+.left-box-contact {
   z-index: 0;
   width: 65%;
 }
 
-.left-box-fill-in {
+.left-box-fill-in-contact {
   background: rgba(255, 255, 255, 0.3);
   height: 100%;
 }
-.row {
+.row-contact {
   display: flex;
   flex-direction: row;
   padding: 0.2em;
 }
 
-.input {
+.input-contact {
   width: 46%;
   padding: 1em;
 }
 
-.input-information {
+.input-information-contact {
   color: rgba(255, 255, 255, 1);
   margin-bottom: 1vh;
   letter-spacing: 0.2em;
 }
 
-.input-field {
+.input-field-contact {
   background: rgba(255, 255, 255, 0.8);
   width: 100%;
   border-style: none;
@@ -70,11 +70,11 @@
   font-size: 1.1em;
 }
 
-.message {
+.message-contact {
   padding: 1.2em;
 }
 
-.message-input {
+.message-input-contact {
   margin-bottom: 1vh;
   letter-spacing: 0.2em;
 }
@@ -91,19 +91,19 @@ textarea {
   font-size: 1.1em;
 }
 
-.right-box {
+.right-box-contact {
   margin: 0 1vw;
   width: 30%;
   background: rgba(255, 255, 255, 0.3);
   /* opacity: 0.6; */
 }
 
-.right-box-header {
+.right-box-header-contact {
   padding: 1.2em;
   letter-spacing: 0.2em;
 }
 
-.right-box-content {
+.right-box-content-contact {
   font-family: sans-serif;
   letter-spacing: 0;
 }
@@ -121,7 +121,7 @@ textarea {
   color: #3e5ba9;
 }
 
-.send-button {
+.send-button-contact {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
@@ -137,7 +137,7 @@ textarea {
   border-radius: 10px;
 }
 
-.left-content-button {
+.left-content-button-contact {
   font-family: "Montserrat";
   font-size: 24px;
   letter-spacing: 0.2em;
