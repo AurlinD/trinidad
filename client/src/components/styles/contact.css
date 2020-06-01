@@ -110,15 +110,10 @@ textarea {
 
 .fa-paper-plane:before {
   content: "\f1d8";
-  color: #3e5ba9;
+  color: #232854;
   background: #ffffff;
   padding: 0.3em;
   border-radius: 10px;
-}
-
-.send-button:hover {
-  background-color: #ffffff;
-  color: #3e5ba9;
 }
 
 .send-button-contact {
@@ -135,6 +130,10 @@ textarea {
   color: #ffffff;
   width: 17vw;
   border-radius: 10px;
+}
+.send-button-contact:hover {
+  background-color: #ffffff;
+  color: #232854;
 }
 
 .left-content-button-contact {
