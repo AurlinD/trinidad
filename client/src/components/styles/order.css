@@ -1,6 +1,6 @@
 .wrapper-order {
-  background: grey;
   font-family: "Montserrat";
+  background-image: url("/lib/order.jpg");
   background-size: cover;
   margin: 0 auto;
   z-index: -10;
@@ -10,14 +10,14 @@
   text-align: center;
   color: white;
   font-size: 48px;
-  padding: 4vh 0;
+  padding-top: 10vh;
   letter-spacing: 0.2em;
 }
 
 .content-order {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -25,4 +25,94 @@
   font-family: sans-serif;
   color: white;
   padding-bottom: 0.4em;
+}
+
+.row-order {
+  display: flex;
+  flex-direction: row;
+  padding: 0.2em;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.input-order {
+  width: 45%;
+  padding: 1em;
+}
+
+.input-information-order {
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 1vh;
+  letter-spacing: 0.2em;
+}
+
+.input-field-order {
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  border-style: none;
+  border-radius: 10px;
+  height: 4vh;
+  font-size: 1.1em;
+}
+
+.contact-order {
+  color: white;
+  padding-top: 6vh;
+}
+
+.additional-comments {
+  background: rgba(255, 255, 255, 0.3);
+  margin-top: 6vh;
+}
+
+.additional-comments-content {
+  padding: 1em;
+}
+
+.additional-comments-information {
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 1vh;
+  letter-spacing: 0.2em;
+}
+
+textarea {
+  padding: 0;
+  margin: 0;
+  height: 20vh;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  border-style: none;
+  resize: none;
+  font-size: 1.1em;
+}
+
+.button-order {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  height: 7vh;
+  margin: 6vh auto;
+  align-items: center;
+  color: #ffffff;
+  width: 17vw;
+  border-radius: 10px;
+}
+
+.left-content-button-order {
+  font-family: "Montserrat";
+  font-size: 24px;
+  letter-spacing: 0.2em;
+}
+.fa-chevron-down:before {
+  color: #232854;
+  background: #ffffff;
+  padding: 0.3em;
+  border-radius: 10px;
+}
+
+.button-order:hover {
+  background-color: #ffffff;
+  color: #232854;
 }
