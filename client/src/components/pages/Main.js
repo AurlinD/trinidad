@@ -2,6 +2,7 @@ import React from "react";
 
 import AboutUsBox from "../AboutUsBox.js";
 import OurService from "../OurService.jsx"
+import Carousel from "../Carousel.jsx"
 import "../styles/home.css"
 
 export default function Main() {
@@ -31,6 +32,8 @@ export default function Main() {
 
     <div className="past-clients-body">
       <div className="past-clients">
+        <Carousel
+        />
       </div>
     </div>
 
