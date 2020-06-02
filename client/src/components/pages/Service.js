@@ -1,5 +1,6 @@
 import React from "react";
+import OurService from "../OurService.jsx";
 
 export default function Service() {
-  return <div>WHAT WE DO</div>;
+  return <OurService />;
 }
