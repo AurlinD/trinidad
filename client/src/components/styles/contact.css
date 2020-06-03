@@ -3,7 +3,7 @@
   background-image: url("/lib/contact.jpg");
   background-size: cover;
   margin: 0 auto;
-  height: 97vh;
+  height: 100vh;
   z-index: -10;
 }
 
@@ -130,6 +130,7 @@ textarea {
   color: #ffffff;
   width: 17vw;
   border-radius: 10px;
+  min-width: 220px;
 }
 .send-button-contact:hover {
   background-color: #ffffff;
@@ -140,4 +141,5 @@ textarea {
   font-family: "Montserrat";
   font-size: 24px;
   letter-spacing: 0.2em;
+  padding-left: 30px;
 }
