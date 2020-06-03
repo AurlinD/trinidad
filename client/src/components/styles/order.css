@@ -98,12 +98,14 @@ textarea {
   color: #ffffff;
   width: 17vw;
   border-radius: 10px;
+  min-width: 220px;
 }
 
 .left-content-button-order {
   font-family: "Montserrat";
   font-size: 24px;
   letter-spacing: 0.2em;
+  padding-left: 30px;
 }
 .fa-chevron-down:before {
   color: #232854;
