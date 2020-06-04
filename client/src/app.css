@@ -79,7 +79,7 @@ p {
 }
 
 .our-service-body {
-  height: 970px;
+  height: 100vh;
 }
 
 .our-service {
@@ -88,7 +88,7 @@ p {
   background-image: url("/lib/service.png");
   background-size: cover;
   width: 100vw;
-  height: 970px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,9 +96,10 @@ p {
 }
 
 .our-service h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 48px;
   color: white;
+  letter-spacing: 0.2em;
 }
 
 .button-container {
