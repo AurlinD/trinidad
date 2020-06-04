@@ -1,20 +1,23 @@
 .wrapper-footer {
+  display: flex;
   width: 100%;
   height: 25vh;
   background-image: url("/lib/contact.jpg");
   background-size: cover;
   background-position: center;
   z-index: -10;
+  justify-content: center;
 }
 
 .container-white-background-footer {
+  width: 100%;
+  margin: 10px 10px;
   background: rgba(255, 255, 255, 0.3);
-  /* margin: 10px;
-  height: inherit; */
 }
 
 .container-content {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   padding: 1em;
   font-size: 1.1em;
@@ -24,7 +27,7 @@
 }
 
 .left-container-footer {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   width: 55%;
   justify-content: space-between;
@@ -80,7 +83,7 @@
   margin-top: 1vh;
   margin-left: 4vw;
   padding-left: 35px;
-  min-width: 280px;
+  min-width: 288px;
 }
 
 .fa-chevron-right:before {

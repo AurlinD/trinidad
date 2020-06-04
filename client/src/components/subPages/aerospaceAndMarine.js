@@ -2,9 +2,5 @@ import React from "react";
 import Footer from "../Footer.js";
 
 export default function aerospaceAndMarine() {
-  return (
-    <div>
-      <Footer />
-    </div>
-  );
+  return <div>aerospaceAndMarine</div>;
 }
