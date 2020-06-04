@@ -60,10 +60,10 @@ export default function Contact() {
                 COUNTRY CITY
               </div>
             </div>
-            <div className="right-box-header-contact">
+            {/* <div className="right-box-header-contact">
               FOLLOW US
               <div className="right-box-content-contact">emoticons</div>
-            </div>
+            </div> */}
           </div>
         </div>
         <button className="send-button-contact">
