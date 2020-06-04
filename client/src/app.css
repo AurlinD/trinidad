@@ -96,9 +96,10 @@ p {
 }
 
 .our-service h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 48px;
   color: white;
+  letter-spacing: 0.2em;
 }
 
 .button-container {

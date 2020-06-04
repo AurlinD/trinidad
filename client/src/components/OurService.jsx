@@ -8,7 +8,7 @@ export default class OurService extends Component {
     return (
       <div class="our-service-body">
         <div class="our-service">
-          <h2> Our Services </h2>
+          <h2> OUR SERVICE </h2>
           <div class="button-container">
             <Link type="button" to={`/construction`} class="our-service-button">
               Construction
