@@ -3,6 +3,9 @@ import "../styles/reset.css";
 import "../styles/order.css";
 
 export default function Order() {
+  function onSave() {
+    console.log("hello");
+  }
   return (
     <div className="wrapper-order">
       <div className="header-order">ORDER</div>
@@ -109,10 +112,10 @@ export default function Order() {
             <textarea className="additional-comments-form" />
           </div>
         </div>
-        <button className="button-order">
+        <button className="button-order" onClick={onSave}>
           <div className="left-content-button-order">ORDER</div>
           <div className="right-content-button-order">
-            <i class="fas fa-chevron-down fa-2x"></i>
+            <i className="fas fa-chevron-down fa-2x"></i>
           </div>
         </button>
       </div>
