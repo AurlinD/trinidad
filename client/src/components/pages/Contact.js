@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "../styles/reset.css";
 import "../styles/contact.css";
+import Error from "../helpers/Error";
+import Confirmation from "../helpers/Confirmation";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -9,6 +11,10 @@ export default function Contact() {
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const [error, setError] = useState(false);
+  const [confirm, setConfirm] = useState(false);
+
   function onSave() {
     var templateParams = {
       name: name,
@@ -18,25 +24,40 @@ export default function Contact() {
       message: message,
     };
 
-    emailjs
-      .send(
-        "default_service",
-        "template_d6ZRc6tw",
-        templateParams,
-        "user_RYx15GsW6E6KTjMmRGDjT"
-      )
-      .then(
-        function (response) {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        function (error) {
-          console.log("FAILED...", error);
-        }
-      );
+    if (name && email !== "") {
+      setError(false);
+
+      emailjs
+        .send(
+          "default_service",
+          "template_d6ZRc6tw",
+          templateParams,
+          "user_RYx15GsW6E6KTjMmRGDjT"
+        )
+        .then(
+          function (response) {
+            setConfirm(true);
+            setName("");
+            setNumber("");
+            setEmail("");
+            setMessage("");
+            setCompany("");
+          },
+          function (error) {
+            console.log("FAILED...", error);
+          }
+        );
+    } else {
+      setError(true);
+      setConfirm(false);
+    }
   }
   return (
     <div className="wrapper-contact">
       <div className="header-contact">LETS CONNECT</div>
+      {error ? <Error /> : null}
+      {confirm ? <Confirmation /> : null}
+      {}
       <div className="content-contact">
         <div className="sub-header-contact">
           * Give our department 3-5 working days to get back to you

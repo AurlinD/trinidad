@@ -31,7 +31,6 @@ export default function Order() {
       company: company,
       pcontact: pcontact,
       viscosity,
-      viscosity,
       curespeed: curespeed,
       color: color,
       adhesion: adhesion,
