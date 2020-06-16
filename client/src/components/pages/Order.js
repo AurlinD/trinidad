@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "../styles/reset.css";
 import "../styles/order.css";
+import Error from "../helpers/Error";
+import Confirmation from "../helpers/Confirmation";
 
 export default function Order() {
   const [fname, setFname] = useState("");
@@ -21,6 +23,9 @@ export default function Order() {
   const [temperature, setTemperature] = useState("");
   const [cure, setCure] = useState("");
   const [comments, setComments] = useState("");
+
+  const [error, setError] = useState(false);
+  const [confirm, setConfirm] = useState(false);
 
   function onSave() {
     var templateParams = {
@@ -43,26 +48,52 @@ export default function Order() {
       comments: comments,
     };
 
-    emailjs
-      .send(
-        "default_service",
-        "test",
-        templateParams,
-        "user_RYx15GsW6E6KTjMmRGDjT"
-      )
-      .then(
-        function (response) {
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        function (error) {
-          console.log("FAILED...", error);
-        }
-      );
+    if (fname && email !== "") {
+      setError(false);
+
+      emailjs
+        .send(
+          "default_service",
+          "test",
+          templateParams,
+          "user_RYx15GsW6E6KTjMmRGDjT"
+        )
+        .then(
+          function (response) {
+            setConfirm(true);
+            setFname("");
+            setLname("");
+            setNumber("");
+            setEmail("");
+            setCompany("");
+            setPcontact("");
+            setViscosity("");
+            setCurespeed("");
+            setColor("");
+            setAdhesion("");
+            setTensile("");
+            setTear("");
+            setElongation("");
+            setModulus("");
+            setTemperature("");
+            setCure("");
+            setComments("");
+          },
+          function (error) {
+            console.log("FAILED...", error);
+          }
+        );
+    } else {
+      setError(true);
+      setConfirm(false);
+    }
   }
 
   return (
     <div className="wrapper-order">
       <div className="header-order">ORDER</div>
+      {error ? <Error /> : null}
+      {confirm ? <Confirmation /> : null}
       <div className="content-order">
         <div className="contact-order">
           <div className="sub-header-contact-order">* Contact Information</div>
@@ -104,7 +135,7 @@ export default function Order() {
                 />
               </div>
               <div className="input-order">
-                <div className="input-information-order">EMAIL ADDRESS</div>
+                <div className="input-information-order">EMAIL ADDRESS *</div>
                 <input
                   className="input-field-order"
                   type="text"
