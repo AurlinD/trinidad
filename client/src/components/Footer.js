@@ -36,7 +36,7 @@ export default function Footer() {
               <button className="button-footer">
                 <div className="left-content-button-footer">LETS CONNECT</div>
                 <div className="right-content-button-footer">
-                  <i class="fas fa-chevron-right"></i>
+                  <i className="fas fa-chevron-right"></i>
                 </div>
               </button>
             </div>

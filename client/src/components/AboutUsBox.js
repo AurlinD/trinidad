@@ -1,23 +1,22 @@
 import React, { Component } from "react";
 
-import "../app.css"
+import "../app.css";
 
 export default class AboutUsBox extends Component {
   render() {
-    return(
-    <div class={`about-us-box ${this.props.alignRight ? "reverse" : ""}`}>
-      <div class="about-us-text">
-        <div class="about-us-header-back">
-          <h2> {this.props.aboutUsHeader} </h2>
-          <div class="about-us-grey-back">
+    return (
+      <div className={`about-us-box ${this.props.alignRight ? "reverse" : ""}`}>
+        <div className="about-us-text">
+          <div className="about-us-header-back">
+            <h2> {this.props.aboutUsHeader} </h2>
+            <div className="about-us-grey-back"></div>
           </div>
+          <p> {this.props.aboutUsBody} </p>
         </div>
-        <p> {this.props.aboutUsBody} </p>
+        <div className="about-us-img-box">
+          <img className="about-us-img" src={`/lib/${this.props.imgName}`} />
+        </div>
       </div>
-      <div class="about-us-img-box">
-        <img class="about-us-img" src={`/lib/${this.props.imgName}`} />
-      </div>
-    </div>
     );
   }
 }

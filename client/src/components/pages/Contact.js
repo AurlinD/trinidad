@@ -1,8 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "../styles/reset.css";
 import "../styles/contact.css";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  function onSave() {
+    var templateParams = {
+      name: name,
+      number: number,
+      company: company,
+      email: email,
+      message: message,
+    };
+
+    emailjs
+      .send(
+        "default_service",
+        "template_d6ZRc6tw",
+        templateParams,
+        "user_RYx15GsW6E6KTjMmRGDjT"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
+  }
   return (
     <div className="wrapper-contact">
       <div className="header-contact">LETS CONNECT</div>
@@ -16,29 +47,63 @@ export default function Contact() {
               <div className="row-contact">
                 <div className="input-contact">
                   <div className="input-information-contact">NAME *</div>
-                  <input className="input-field-contact" type="text" />
+                  <input
+                    className="input-field-contact"
+                    type="text"
+                    onChange={(event) => {
+                      setName(event.target.value);
+                    }}
+                    value={name}
+                  />
                 </div>
                 <div className="input-contact">
                   <div className="input-information-contact">PHONE NUMBER</div>
-                  <input className="input-field-contact" type="text" />
+                  <input
+                    className="input-field-contact"
+                    type="text"
+                    onChange={(event) => {
+                      setNumber(event.target.value);
+                    }}
+                    value={number}
+                  />
                 </div>
               </div>
 
               <div className="row-contact">
                 <div className="input-contact">
                   <div className="input-information-contact">COMPANY</div>
-                  <input className="input-field-contact" type="text" />
+                  <input
+                    className="input-field-contact"
+                    type="text"
+                    onChange={(event) => {
+                      setCompany(event.target.value);
+                    }}
+                    value={company}
+                  />
                 </div>
                 <div className="input-contact">
                   <div className="input-information-contact">
                     E-MAIL ADDRESS *
                   </div>
-                  <input className="input-field-contact" type="text" />
+                  <input
+                    className="input-field-contact"
+                    type="text"
+                    onChange={(event) => {
+                      setEmail(event.target.value);
+                    }}
+                    value={email}
+                  />
                 </div>
               </div>
               <div className="message-contact">
                 <div className="message-input-contact">MESSAGE</div>
-                <textarea className="message-field-contact" />
+                <textarea
+                  className="message-field-contact"
+                  onChange={(event) => {
+                    setMessage(event.target.value);
+                  }}
+                  value={message}
+                />
               </div>
             </div>
           </div>
@@ -66,10 +131,10 @@ export default function Contact() {
             </div> */}
           </div>
         </div>
-        <button className="send-button-contact">
+        <button className="send-button-contact" onClick={onSave}>
           <div className="left-content-button-contact">SEND</div>
           <div className="right-content-button-contact">
-            <i class="far fa-paper-plane fa-2x"></i>
+            <i className="far fa-paper-plane fa-2x"></i>
           </div>
         </button>
       </div>
