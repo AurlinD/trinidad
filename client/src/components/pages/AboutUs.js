@@ -7,7 +7,7 @@ import Footer from "../Footer.js";
 export default function AboutUs() {
   return (
     <div className="container-main">
-      <div class="page">
+      <div className="page">
         <AboutUsBox
           alignRight={true}
           aboutUsHeader="WHAT ARE SILICONES?"
