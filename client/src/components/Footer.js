@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/footer.css";
 import "./styles/reset.css";
 
@@ -33,12 +34,12 @@ export default function Footer() {
           <div className="right-container">
             <div className="question-container">
               GOT QUESTION?
-              <button className="button-footer">
+              <Link className="button-footer" to={"/contact"}>
                 <div className="left-content-button-footer">LETS CONNECT</div>
                 <div className="right-content-button-footer">
                   <i className="fas fa-chevron-right"></i>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </div>
