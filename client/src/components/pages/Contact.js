@@ -4,6 +4,7 @@ import "../styles/reset.css";
 import "../styles/contact.css";
 import Error from "../helpers/Error";
 import Confirmation from "../helpers/Confirmation";
+import FormFieldsContact from "../helpers/FormFieldsContact";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -65,57 +66,22 @@ export default function Contact() {
         <div className="boxes-contact">
           <div className="left-box-contact">
             <div className="left-box-fill-in-contact">
-              <div className="row-contact">
-                <div className="input-contact">
-                  <div className="input-information-contact">NAME *</div>
-                  <input
-                    className="input-field-contact"
-                    type="text"
-                    onChange={(event) => {
-                      setName(event.target.value);
-                    }}
-                    value={name}
-                  />
-                </div>
-                <div className="input-contact">
-                  <div className="input-information-contact">PHONE NUMBER</div>
-                  <input
-                    className="input-field-contact"
-                    type="text"
-                    onChange={(event) => {
-                      setNumber(event.target.value);
-                    }}
-                    value={number}
-                  />
-                </div>
-              </div>
-
-              <div className="row-contact">
-                <div className="input-contact">
-                  <div className="input-information-contact">COMPANY</div>
-                  <input
-                    className="input-field-contact"
-                    type="text"
-                    onChange={(event) => {
-                      setCompany(event.target.value);
-                    }}
-                    value={company}
-                  />
-                </div>
-                <div className="input-contact">
-                  <div className="input-information-contact">
-                    E-MAIL ADDRESS *
-                  </div>
-                  <input
-                    className="input-field-contact"
-                    type="text"
-                    onChange={(event) => {
-                      setEmail(event.target.value);
-                    }}
-                    value={email}
-                  />
-                </div>
-              </div>
+              <FormFieldsContact
+                name1="NAME *"
+                name2="PHONE NUMBER"
+                function1={setName}
+                function2={setNumber}
+                state1={name}
+                state2={number}
+              />
+              <FormFieldsContact
+                name1="COMPANY"
+                name2="E-MAIL ADDRESS *"
+                function1={setCompany}
+                function2={setEmail}
+                state1={company}
+                state2={email}
+              />
               <div className="message-contact">
                 <div className="message-input-contact">MESSAGE</div>
                 <textarea

@@ -4,6 +4,7 @@ import "../styles/reset.css";
 import "../styles/order.css";
 import Error from "../helpers/Error";
 import Confirmation from "../helpers/Confirmation";
+import FormFieldsOrder from "../helpers/FormFieldsOrder";
 
 export default function Order() {
   const [fname, setFname] = useState("");
@@ -98,207 +99,75 @@ export default function Order() {
         <div className="contact-order">
           <div className="sub-header-contact-order">* Contact Information</div>
           <div className="box-contact-order">
-            <div className="row-order">
-              <div className="input-order">
-                <div className="input-information-order">FIRST NAME *</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setFname(event.target.value);
-                  }}
-                  value={fname}
-                />
-              </div>
-              <div className="input-order">
-                <div className="input-information-order">LAST NAME</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setLname(event.target.value);
-                  }}
-                  value={lname}
-                />
-              </div>
-            </div>
-            <div className="row-order">
-              <div className="input-order">
-                <div className="input-information-order">PHONE NUMBER</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setNumber(event.target.value);
-                  }}
-                  value={number}
-                />
-              </div>
-              <div className="input-order">
-                <div className="input-information-order">EMAIL ADDRESS *</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setEmail(event.target.value);
-                  }}
-                  value={email}
-                />
-              </div>
-            </div>
-            <div className="row-order">
-              <div className="input-order">
-                <div className="input-information-order">COMPANY</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setCompany(event.target.value);
-                  }}
-                  value={company}
-                />
-              </div>
-              <div className="input-order">
-                <div className="input-information-order">
-                  PREFERRED CONTACT (PHONE/EMAIL)
-                </div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setPcontact(event.target.value);
-                  }}
-                  value={pcontact}
-                />
-              </div>
-            </div>
+            <FormFieldsOrder
+              name1="FIRST NAME *"
+              name2="LAST NAME"
+              function1={setFname}
+              function2={setLname}
+              state1={fname}
+              state2={lname}
+            />
+            <FormFieldsOrder
+              name1="PHONE NUMBER"
+              name2="EMAIL ADDRESS *"
+              function1={setNumber}
+              function2={setEmail}
+              state1={number}
+              state2={email}
+            />
+            <FormFieldsOrder
+              name1="COMPANY"
+              name2="PREFFERED CONTACT (PHONE/EMAIL)"
+              function1={setCompany}
+              function2={setPcontact}
+              state1={company}
+              state2={pcontact}
+            />
           </div>
         </div>
         <div className="contact-order">
           <div className="sub-header-contact-order">* Product Information</div>
           <div className="box-order-order">
-            <div className="row-order">
-              <div className="input-order">
-                <div className="input-information-order">VISCOSITY</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setViscosity(event.target.value);
-                  }}
-                  value={viscosity}
-                />
-              </div>
-              <div className="input-order">
-                <div className="input-information-order">CURE SPEED</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setCurespeed(event.target.value);
-                  }}
-                  value={curespeed}
-                />
-              </div>
-            </div>
-            <div className="row-order">
-              <div className="input-order">
-                <div className="input-information-order">COLOR</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setColor(event.target.value);
-                  }}
-                  value={color}
-                />
-              </div>
-              <div className="input-order">
-                <div className="input-information-order">ADHESION TO</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setAdhesion(event.target.value);
-                  }}
-                  value={adhesion}
-                />
-              </div>
-            </div>
-            <div className="row-order">
-              <div className="input-order">
-                <div className="input-information-order">TENSILE STRENGTH</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setTensile(event.target.value);
-                  }}
-                  value={tensile}
-                />
-              </div>
-              <div className="input-order">
-                <div className="input-information-order">TEAR STRENGTH</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setTear(event.target.value);
-                  }}
-                  value={tear}
-                />
-              </div>
-            </div>
-            <div className="row-order">
-              <div className="input-order">
-                <div className="input-information-order">ELONGATION</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setElongation(event.target.value);
-                  }}
-                  value={elongation}
-                />
-              </div>
-              <div className="input-order">
-                <div className="input-information-order">MODULUS</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setModulus(event.target.value);
-                  }}
-                  value={modulus}
-                />
-              </div>
-            </div>
-            <div className="row-order">
-              <div className="input-order">
-                <div className="input-information-order">
-                  TEMPERATURE RESISTANT
-                </div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setTemperature(event.target.value);
-                  }}
-                  value={temperature}
-                />
-              </div>
-              <div className="input-order">
-                <div className="input-information-order">CURE SYSTEM</div>
-                <input
-                  className="input-field-order"
-                  type="text"
-                  onChange={(event) => {
-                    setCure(event.target.value);
-                  }}
-                  value={cure}
-                />
-              </div>
-            </div>
+            <FormFieldsOrder
+              name1="VISCOSITY"
+              name2="CURE SPEED"
+              function1={setViscosity}
+              function2={setCurespeed}
+              state1={viscosity}
+              state2={curespeed}
+            />
+            <FormFieldsOrder
+              name1="COLOR"
+              name2="ADHESION TO"
+              function1={setColor}
+              function2={setAdhesion}
+              state1={color}
+              state2={adhesion}
+            />
+            <FormFieldsOrder
+              name1="TENSILE STRENGTH"
+              name2="TEAR STRENGTH"
+              function1={setTensile}
+              function2={setTear}
+              state1={tensile}
+              state2={tear}
+            />
+            <FormFieldsOrder
+              name1="ELONGATION"
+              name2="MODULUS"
+              function1={setElongation}
+              function2={setModulus}
+              state1={elongation}
+              state2={modulus}
+            />
+            <FormFieldsOrder
+              name1="TEMPERATURE RESISTANT"
+              name2="CURE SYSTEM"
+              function1={setTemperature}
+              function2={setCure}
+              state1={temperature}
+              state2={cure}
+            />
           </div>
         </div>
         <div className="additional-comments">
