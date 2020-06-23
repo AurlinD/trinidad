@@ -59,11 +59,7 @@ export default class OurService extends Component {
             >
               Electronics
             </Link>
-            <Link
-              type="button"
-              to={`/custom_formulations`}
-              className="our-service-button"
-            >
+            <Link type="button" to={`/order`} className="our-service-button">
               Custom Formulations
             </Link>
             <Link

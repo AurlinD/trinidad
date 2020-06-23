@@ -22,7 +22,7 @@ export default function medicalAndSurgical() {
       <SpecificService
         imgName="specific-service-product.jpg"
         alignRight={true}
-        productHeader="TMedical Equipment: MRI
+        productHeader="Medical Equipment: MRI
         Components etc."
       />
       <SpecificService
