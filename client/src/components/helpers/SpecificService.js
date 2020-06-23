@@ -22,7 +22,7 @@ export default function SpecificService(props) {
             and the like).
           </div>
         </div>
-        <img className="product-img" src={`/lib/${props.imgName}`} />
+        <img className="product-img" src={`/lib/${props.imgName}`} alt="" />
       </div>
     </div>
   );
