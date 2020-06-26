@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7cf31628c633affb28bc04b7feb01b2a",
+    "revision": "7ec82d2f378bb6e2fcc517dd4f3f5dad",
     "url": "/trinidad/index.html"
   },
   {
-    "revision": "aad7d5ddf095c4186e7b",
-    "url": "/trinidad/static/css/main.ca64050c.chunk.css"
+    "revision": "31d45805d7a2117fa7be",
+    "url": "/trinidad/static/css/main.eaebcc91.chunk.css"
   },
   {
     "revision": "4d4ff1acdf54aff78617",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/trinidad/static/js/2.90dec130.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aad7d5ddf095c4186e7b",
+    "revision": "31d45805d7a2117fa7be",
     "url": "/trinidad/static/js/main.75562899.chunk.js"
   },
   {
