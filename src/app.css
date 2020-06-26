@@ -87,7 +87,7 @@ p {
   left: 0;
   background-image: url("https://aurlind.github.io/trinidad/lib/service.png");
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -136,6 +136,7 @@ a:-webkit-any-link {
 }
 
 .our-service-button:hover {
+  transition: 0.25s;
   background-color: #ffffff;
   color: black;
 }

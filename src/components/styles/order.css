@@ -2,6 +2,7 @@
   font-family: "Montserrat";
   background-image: url("https://aurlind.github.io/trinidad/lib/order.jpg");
   background-size: cover;
+  background-position: center;
   margin: 0 auto;
   z-index: -10;
 }
