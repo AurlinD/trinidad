@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ScrollToTop from "./helpers/ScrollToTop.js";
 import "./styles/navigation.css";
 
 export default function Navigation() {
@@ -27,7 +26,6 @@ export default function Navigation() {
         <Link className="right-most" to="/order">
           Order
         </Link>
-        <ScrollToTop />
       </div>
     </nav>
   );

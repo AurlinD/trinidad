@@ -1,7 +1,6 @@
 import React from "react";
-import { Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Navigation from "./Navigation";
-import history from "./history";
 import Main from "./pages/Main";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
@@ -16,11 +15,13 @@ import manufacturing from "./subPages/manufacturing";
 import medicalAndSurgical from "./subPages/medicalAndSurgical";
 import personalCareAndBeauty from "./subPages/personalCareAndBeauty";
 import solarAndEnergy from "./subPages/solarAndEnergy";
+import ScrollToTop from "./helpers/ScrollToTop";
 
 const App = () => {
   return (
     <div className="ui container">
-      <Router history={history}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
+        <ScrollToTop />
         <div className="container">
           <Navigation />
           <Switch>
@@ -56,7 +57,7 @@ const App = () => {
             <Route path="/solar_energy" exact component={solarAndEnergy} />
           </Switch>
         </div>
-      </Router>
+      </HashRouter>
     </div>
   );
 };
