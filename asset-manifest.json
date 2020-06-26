@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/trinidad/static/css/main.eaebcc91.chunk.css",
+    "main.css": "/trinidad/static/css/main.e5926daf.chunk.css",
     "main.js": "/trinidad/static/js/main.75562899.chunk.js",
     "main.js.map": "/trinidad/static/js/main.75562899.chunk.js.map",
     "runtime-main.js": "/trinidad/static/js/runtime-main.f45a0b17.js",
@@ -8,15 +8,15 @@
     "static/js/2.90dec130.chunk.js": "/trinidad/static/js/2.90dec130.chunk.js",
     "static/js/2.90dec130.chunk.js.map": "/trinidad/static/js/2.90dec130.chunk.js.map",
     "index.html": "/trinidad/index.html",
-    "precache-manifest.f25f689a92b8e2908d03c84b186da84b.js": "/trinidad/precache-manifest.f25f689a92b8e2908d03c84b186da84b.js",
+    "precache-manifest.399c01a082a51eb0641d23c4559a51b5.js": "/trinidad/precache-manifest.399c01a082a51eb0641d23c4559a51b5.js",
     "service-worker.js": "/trinidad/service-worker.js",
-    "static/css/main.eaebcc91.chunk.css.map": "/trinidad/static/css/main.eaebcc91.chunk.css.map",
+    "static/css/main.e5926daf.chunk.css.map": "/trinidad/static/css/main.e5926daf.chunk.css.map",
     "static/js/2.90dec130.chunk.js.LICENSE.txt": "/trinidad/static/js/2.90dec130.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f45a0b17.js",
     "static/js/2.90dec130.chunk.js",
-    "static/css/main.eaebcc91.chunk.css",
+    "static/css/main.e5926daf.chunk.css",
     "static/js/main.75562899.chunk.js"
   ]
 }
