@@ -11,7 +11,7 @@
   width: 100%;
   display: inline-flex;
   flex-direction: row;
-  background-image: url("/lib/specific-service.jpg");
+  background-image: url("https://aurlind.github.io/trinidad/lib/specific-service.jpg");
   background-size: cover;
   background-position: center;
   text-align: right;

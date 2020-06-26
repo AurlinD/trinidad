@@ -6,15 +6,15 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Order from "./pages/Order";
 import Service from "./pages/Service";
-import aerospaceAndMarine from "./subPages/aerospaceAndMarine";
-import automotive from "./subPages/automotive";
-import construction from "./subPages/construction";
-import customFormulations from "./subPages/customFormulations";
-import electronics from "./subPages/electronics";
-import manufacturing from "./subPages/manufacturing";
-import medicalAndSurgical from "./subPages/medicalAndSurgical";
-import personalCareAndBeauty from "./subPages/personalCareAndBeauty";
-import solarAndEnergy from "./subPages/solarAndEnergy";
+import AerospaceAndMarine from "./subPages/aerospaceAndMarine";
+import Automotive from "./subPages/automotive";
+import Construction from "./subPages/construction";
+import CustomFormulations from "./subPages/customFormulations";
+import Electronics from "./subPages/electronics";
+import Manufacturing from "./subPages/manufacturing";
+import MedicalAndSurgical from "./subPages/medicalAndSurgical";
+import PersonalCareAndBeauty from "./subPages/personalCareAndBeauty";
+import SolarAndEnergy from "./subPages/solarAndEnergy";
 import ScrollToTop from "./helpers/ScrollToTop";
 
 const App = () => {
@@ -33,28 +33,28 @@ const App = () => {
             <Route
               path="/aerospace_marine"
               exact
-              component={aerospaceAndMarine}
+              component={AerospaceAndMarine}
             />
-            <Route path="/automotive" exact component={automotive} />
-            <Route path="/construction" exact component={construction} />
+            <Route path="/automotive" exact component={Automotive} />
+            <Route path="/construction" exact component={Construction} />
             <Route
               path="/custom_formulations"
               exact
-              component={customFormulations}
+              component={CustomFormulations}
             />
-            <Route path="/electronics" exact component={electronics} />
-            <Route path="/manufacturing" exact component={manufacturing} />
+            <Route path="/electronics" exact component={Electronics} />
+            <Route path="/manufacturing" exact component={Manufacturing} />
             <Route
               path="/medical_surgical"
               exact
-              component={medicalAndSurgical}
+              component={MedicalAndSurgical}
             />
             <Route
               path="/personal_care_beauty"
               exact
-              component={personalCareAndBeauty}
+              component={PersonalCareAndBeauty}
             />
-            <Route path="/solar_energy" exact component={solarAndEnergy} />
+            <Route path="/solar_energy" exact component={SolarAndEnergy} />
           </Switch>
         </div>
       </HashRouter>

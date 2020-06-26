@@ -22,7 +22,11 @@ export default function SpecificService(props) {
             and the like).
           </div>
         </div>
-        <img className="product-img" src={`/lib/${props.imgName}`} alt="" />
+        <img
+          className="product-img"
+          src={`https://aurlind.github.io/trinidad/lib/${props.imgName}`}
+          alt=""
+        />
       </div>
     </div>
   );

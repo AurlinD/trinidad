@@ -85,7 +85,7 @@ p {
 .our-service {
   position: absolute;
   left: 0;
-  background-image: url("/lib/service.png");
+  background-image: url("https://aurlind.github.io/trinidad/lib/service.png");
   background-size: cover;
   width: 100vw;
   height: 100vh;

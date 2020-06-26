@@ -16,7 +16,7 @@ export default class AboutUsBox extends Component {
         <div className="about-us-img-box">
           <img
             className="about-us-img"
-            src={`/lib/${this.props.imgName}`}
+            src={`https://aurlind.github.io/trinidad/lib/${this.props.imgName}`}
             alt=""
           />
         </div>
