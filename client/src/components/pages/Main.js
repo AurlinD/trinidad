@@ -27,18 +27,6 @@ export default function Main() {
       imgName="what.png"
     />
 
-    <div className="home-spacer">
-    </div>
-
-    <div className="past-clients-body">
-      <div className="past-clients">
-        <Carousel
-        />
-      </div>
-    </div>
-
-    <div className="home-spacer">
-    </div>
 
     <OurService
     />

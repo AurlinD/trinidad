@@ -1,21 +1,14 @@
 import React, { Component } from "react";
 
-import "../app.css"
+import "./styles/carousel.css"
 
 export default class CarouselSlide extends Component {
   render() {
     return(
-    <div class={`about-us-box ${this.props.alignRight ? "reverse" : ""}`}>
-      <div class="about-us-text">
-        <div class="about-us-header-back">
-          <h2> {this.props.aboutUsHeader} </h2>
-          <div class="about-us-grey-back">
-          </div>
-        </div>
-        <p> {this.props.aboutUsBody} </p>
-      </div>
-      <div class="about-us-img-box">
-        <img class="about-us-img" src={`/lib/${this.props.imgName}`} />
+    <div>
+      <div className="carousel-text">
+        <h2 className="carousel-name">Client Name</h2>
+        <p className="carousel-quote">Lorem ipsum dolor sit amet, quo utinam feugiat no, pro ea tota propriae officiis, dicit legendos at sit. Mea quando tritani ne, ne vix wisi labores. Singulis patrioque conclusionemque eu vim. Cum esse meis ut. Assueverit interpretaris ut usu, elit bonorum facilisi sed te. </p>
       </div>
     </div>
     );

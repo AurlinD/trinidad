@@ -11,8 +11,10 @@ export default class Carousel extends Component {
           <li id="carousel__slide1"
               tabindex="0"
               className="carousel__slide">
-              <CarouselSlide />
-            <div className="carousel__snapper"></div>
+            <div className="carousel__snapper">
+            <CarouselSlide />
+            </div>
+
               <a href="#carousel__slide4"
                  className="carousel__prev">Go to last slide</a>
               <a href="#carousel__slide2"
@@ -21,8 +23,10 @@ export default class Carousel extends Component {
           <li id="carousel__slide2"
               tabindex="0"
               className="carousel__slide">
-              <CarouselSlide />
-            <div className="carousel__snapper"></div>
+            <div className="carousel__snapper">
+            <CarouselSlide />
+            </div>
+
             <a href="#carousel__slide1"
                className="carousel__prev">Go to previous slide</a>
             <a href="#carousel__slide3"
@@ -31,8 +35,9 @@ export default class Carousel extends Component {
           <li id="carousel__slide3"
               tabindex="0"
               className="carousel__slide">
-              <CarouselSlide />
-            <div className="carousel__snapper"></div>
+            <div className="carousel__snapper">
+            <CarouselSlide />
+            </div>
             <a href="#carousel__slide2"
                className="carousel__prev">Go to previous slide</a>
             <a href="#carousel__slide4"
@@ -41,8 +46,9 @@ export default class Carousel extends Component {
           <li id="carousel__slide4"
               tabindex="0"
               className="carousel__slide">
-              <CarouselSlide />
-            <div className="carousel__snapper"></div>
+            <div className="carousel__snapper">
+            <CarouselSlide />
+            </div>
             <a href="#carousel__slide3"
                className="carousel__prev">Go to previous slide</a>
             <a href="#carousel__slide1"
