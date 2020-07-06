@@ -14,7 +14,7 @@
 }
 
 .hero{
-  background-image: url("/lib/hero.png");
+  background-image: url("https://aurlind.github.io/trinidad/lib/hero.png");
   background-size: cover;
   width: 100%;
   display: flex;
