@@ -1,6 +1,5 @@
 nav.bar {
   display: inline-flex;
-  height: 3vh;
   position: sticky;
   width: 100%;
   z-index: 10;
