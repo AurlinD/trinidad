@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/trinidad/static/css/main.4a4e8d07.chunk.css",
-    "main.js": "/trinidad/static/js/main.2002c667.chunk.js",
-    "main.js.map": "/trinidad/static/js/main.2002c667.chunk.js.map",
+    "main.css": "/trinidad/static/css/main.9390a45c.chunk.css",
+    "main.js": "/trinidad/static/js/main.747de7a1.chunk.js",
+    "main.js.map": "/trinidad/static/js/main.747de7a1.chunk.js.map",
     "runtime-main.js": "/trinidad/static/js/runtime-main.f45a0b17.js",
     "runtime-main.js.map": "/trinidad/static/js/runtime-main.f45a0b17.js.map",
-    "static/js/2.90dec130.chunk.js": "/trinidad/static/js/2.90dec130.chunk.js",
-    "static/js/2.90dec130.chunk.js.map": "/trinidad/static/js/2.90dec130.chunk.js.map",
+    "static/js/2.e18197ae.chunk.js": "/trinidad/static/js/2.e18197ae.chunk.js",
+    "static/js/2.e18197ae.chunk.js.map": "/trinidad/static/js/2.e18197ae.chunk.js.map",
     "index.html": "/trinidad/index.html",
-    "precache-manifest.96ae307246498e095c729a15b068d428.js": "/trinidad/precache-manifest.96ae307246498e095c729a15b068d428.js",
+    "precache-manifest.4132485a92ba491fbb31ee9b46e2cec7.js": "/trinidad/precache-manifest.4132485a92ba491fbb31ee9b46e2cec7.js",
     "service-worker.js": "/trinidad/service-worker.js",
-    "static/css/main.4a4e8d07.chunk.css.map": "/trinidad/static/css/main.4a4e8d07.chunk.css.map",
-    "static/js/2.90dec130.chunk.js.LICENSE.txt": "/trinidad/static/js/2.90dec130.chunk.js.LICENSE.txt"
+    "static/css/main.9390a45c.chunk.css.map": "/trinidad/static/css/main.9390a45c.chunk.css.map",
+    "static/js/2.e18197ae.chunk.js.LICENSE.txt": "/trinidad/static/js/2.e18197ae.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f45a0b17.js",
-    "static/js/2.90dec130.chunk.js",
-    "static/css/main.4a4e8d07.chunk.css",
-    "static/js/main.2002c667.chunk.js"
+    "static/js/2.e18197ae.chunk.js",
+    "static/css/main.9390a45c.chunk.css",
+    "static/js/main.747de7a1.chunk.js"
   ]
 }
