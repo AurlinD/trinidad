@@ -9,7 +9,7 @@ nav.bar {
 
   color: grey;
   padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-bottom: 2em;
   font-size: 1.1em;
   font-family: "Montserrat", sans-serif;
 
@@ -39,9 +39,15 @@ nav a {
   text-decoration: none;
 }
 
-div.right_menu a:hover {
+div.right_menu a {
   border-style: solid;
   border-radius: 10px;
-  border-color: #3e5ba9;
+  border-color: #FFFFFF;
   border-width: 1.5px;
 }
+
+div.right_menu a:hover {
+  border-color: #3e5ba9;
+}
+
+
